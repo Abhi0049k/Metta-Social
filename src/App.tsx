@@ -13,7 +13,7 @@ const App: FC = () => {
 const styles = {
   mainContainer: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column' as const,
     alignItems: 'center',
     minHeight: '100vh',
     padding: '3rem',

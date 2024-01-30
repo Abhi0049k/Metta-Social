@@ -33,7 +33,7 @@ const styles = {
         justifyContent: "center",
         padding: "1rem",
         gap: "1rem",
-        flexWrap: "wrap"
+        flexWrap: "wrap" as const
     },
     loader: {
         width: "4rem",
@@ -48,9 +48,9 @@ const styles = {
         border: "rgba(255, 0, 0, 1) solid 2px",
         height: "fit-content",
         padding: "1rem",
-        backgroundColor: "rgba(255,0,0,.8)",
+        backgroundColor: "rgba(255,0,0,.7)",
         color: "white",
-        textAlign: "center",
+        textAlign: "center" as const,
         borderRadius: "1rem"
     }
 }

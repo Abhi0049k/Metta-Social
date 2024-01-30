@@ -20,8 +20,11 @@ const useCountryList = (val: string) => {
                 }
                 return [...acc, obj]
             }, []))
-        } catch (err) {
-            setErr(err?.response.data.message)
+        } catch (err: unknown) {
+            if (axios.isAxiosError(err))
+                setErr(() => err?.response?.data?.message)
+            else
+                setErr(() => "Something went wrong!!!")
         }
 
         setLoading((prev) => !prev);
