@@ -15,7 +15,8 @@ Create a web page featuring a straightforward search bar designed to identify th
 ![Handling Error](https://github.com/Abhi0049k/Metta-Social/assets/112062354/1c7d9bd7-d840-42a6-9a95-36ace3d5e79a)
 
 ## Demo
-[![Watch the Demo](https://i.vimeocdn.com/video/907970408.jpg)](https://vimeo.com/907970408)
+https://github.com/Abhi0049k/Metta-Social/assets/112062354/30e7731d-f441-477f-b38f-369189e67814
+
 ## Installation
 
 1. Clone the repository:
