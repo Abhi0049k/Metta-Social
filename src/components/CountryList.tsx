@@ -16,7 +16,7 @@ function CountryList() {
                     : loading
                         ? <div style={styles.loader}></div>
                         : error !== ''
-                            ? <h1 style={styles.errEl}>{error}</h1>
+                            ? <h1 style={styles.errEl}>{"Not Found"}</h1>
                             : currency !== ''
                                 ? countries.map((el: countryI, i: number) => <CountryCard key={i} {...el} />)
                                 : ''

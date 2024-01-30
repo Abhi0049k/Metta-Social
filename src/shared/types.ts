@@ -6,6 +6,10 @@ export interface countryI {
 
 export type currencyT = string
 
+export interface errorI {
+    messageI?: string;
+}
+
 export interface CountryInfoI {
     name: {
         common: string;

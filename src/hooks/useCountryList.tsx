@@ -1,10 +1,10 @@
-import axios, { AxiosResponse } from "axios"
+import axios, { AxiosError, AxiosResponse } from "axios"
 import { useEffect, useState } from "react"
 import { CountryInfoI, countryI } from "../shared/types"
 
 const useCountryList = (val: string) => {
     const [loading, setLoading] = useState<boolean>(false)
-    const [error, setErr] = useState<string>('');
+    const [error, setErr] = useState({});
     const [countries, setCountries] = useState<Array<countryI>>([])
 
     const fetchCountries = async (val: string) => {
@@ -22,7 +22,7 @@ const useCountryList = (val: string) => {
             }, []))
         } catch (err: unknown) {
             if (axios.isAxiosError(err))
-                setErr(() => err?.response?.data?.message)
+                setErr(() => (err as AxiosError).response?.data)
             else
                 setErr(() => "Something went wrong!!!")
         }
