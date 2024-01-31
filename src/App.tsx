@@ -13,6 +13,8 @@ const App: FC = () => {
 const styles = {
   mainContainer: {
     display: 'flex',
+    width: "100%",
+    overflow: "hidden",
     flexDirection: 'column' as const,
     alignItems: 'center',
     minHeight: '100vh',

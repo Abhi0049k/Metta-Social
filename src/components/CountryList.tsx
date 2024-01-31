@@ -12,7 +12,7 @@ function CountryList() {
         <div style={styles.resultantDiv}>
             {
                 !currency
-                    ? ''
+                    ? <h1 style={styles.initialMsg}>Enter currency to look for <abbr title=""></abbr> country</h1>
                     : loading
                         ? <div style={styles.loader}></div>
                         : error !== ''
@@ -52,6 +52,11 @@ const styles = {
         color: "white",
         textAlign: "center" as const,
         borderRadius: "1rem"
+    },
+    initialMsg: {
+        color: "rgba(0,0,0,.4)",
+        padding: "4px 8px",
+        textAlign: "center" as const
     }
 }
 

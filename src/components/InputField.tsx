@@ -11,9 +11,9 @@ const InputField: FC = () => {
     }, [setCur])
 
     return (
-        <div style={styles.inputDiv}>
+        <div className="inputDiv">
             <label style={styles.inputLabel} htmlFor="curr">
-                <FaMagnifyingGlass style={styles.magnifyingGlass} />
+                <FaMagnifyingGlass className="magnifyingGlass" />
                 <input style={styles.inputField} id="curr" type="text" value={currency} placeholder={"Search by currency INR, EUR"} onChange={handleChange} />
             </label>
         </div>
@@ -21,21 +21,11 @@ const InputField: FC = () => {
 }
 
 const styles = {
-    inputDiv: {
-        border: "1px solid silver",
-        padding: "1.5rem 2rem",
-        borderRadius: "2rem",
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
-    },
     inputLabel: {
         display: "flex",
         justifyContent: "start",
         alignItems: "center",
         gap: "0.5rem",
-    },
-    magnifyingGlass: {
-        fontSize: "2rem",
-        color: "rgba(0,0,0,0.5)",
     },
     inputField: {
         height: "3rem",
@@ -44,7 +34,7 @@ const styles = {
         padding: "0 1rem",
         border: "none",
         borderRadius: "1rem",
-        outline: "none"
+        outline: "none",
     },
 }
 
