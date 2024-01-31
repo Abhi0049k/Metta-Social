@@ -24,25 +24,28 @@ const styles = {
     inputDiv: {
         border: "1px solid silver",
         padding: "1.5rem 2rem",
-        borderRadius: "2rem"
+        borderRadius: "2rem",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
     },
     inputLabel: {
         display: "flex",
         justifyContent: "start",
         alignItems: "center",
-        gap: "0.5rem"
+        gap: "0.5rem",
     },
     magnifyingGlass: {
         fontSize: "2rem",
-        color: "rgba(0,0,0,0.5)"
+        color: "rgba(0,0,0,0.5)",
     },
     inputField: {
         height: "3rem",
         fontSize: "1.5rem",
         width: "22rem",
         padding: "0 1rem",
-        border: "none"
-    }
+        border: "none",
+        borderRadius: "1rem",
+        outline: "none"
+    },
 }
 
 export default InputField;
