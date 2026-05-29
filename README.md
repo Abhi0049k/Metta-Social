@@ -1,4 +1,4 @@
-# Metta-Social
+# Metta-social
 
 ## Description
 
